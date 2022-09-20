@@ -1,0 +1,50 @@
+/* ==UserStyle==
+@name           DNDBeyond Campaign GameLog Chroma for OBS Capture
+@version        1.0.0
+@namespace      DNDBeyond Campaign GameLog Chroma for OBS Capture
+@author         CommonBrit
+==/UserStyle== */
+
+
+/* Following part changes game log background color*/
+.sidebar__pane-content {
+    background-color: limegreen
+}
+
+/* Following part changes character name font color */
+.GameLogEntry_Line__3fzjk {
+    color: #fff
+}
+
+
+/* Following part changes character name size and adds black background for easier visability over chroma key  */
+.GameLogEntry_Sender__1nIKd {
+    font-size: 1rem;
+    background-color: black;
+}
+
+
+/* Following part changes date font color and adds black background for easier visability over chroma key */
+.GameLogEntry_TimeAgo__zZTLH {
+    color: #fff;
+    background-color: black;
+}
+
+
+/* Following part changes height of lines*/
+/* lowered from 1.4 default to fit more logs on single screen. */
+body {
+    line-height: 1;
+}
+
+
+
+/* Tips for Usage.
+   Aimed to work with just the main campaign page gamelog. Leaving character screen game logs uninterupted for use. 
+   When capturing with OBS just keep the campaign game log open on a tab, then use window capture and cropping with chroma key.
+   This way you can still use regular character rolls like normal without seeing those pages games logs edited.
+
+   Also found that when using it this way, if you right click in the page when in your campaign, followed by inspect elements
+   and then moving the display so its around half inspect/regular the game log part expands a little bit further making it longer when capturing.
+*/
+    
